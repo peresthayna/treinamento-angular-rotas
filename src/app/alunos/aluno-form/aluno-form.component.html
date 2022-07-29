@@ -1,0 +1,16 @@
+<h5>Criar/editar aluno</h5>
+
+<div class="input-group mb-3">
+  <span class="input-group-text">ID</span>
+  <input type="number" id="id" class="form-control" disabled [(ngModel)]="aluno.id">
+</div>
+<div class="input-group mb-3">
+  <span class="input-group-text">Nome</span>
+  <input type="text" id="nome" class="form-control" [(ngModel)]="aluno.nome" (input)="onInput()">
+</div>
+<div class="input-group mb-3">
+  <span class="input-group-text">Email</span>
+  <input type="email" id="email" class="form-control" [(ngModel)]="aluno.email">
+</div>
+
+<!--button clas="btn btn-primary" (click)="salvarContato()">Salvar</button-->
